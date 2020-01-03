@@ -1,27 +1,39 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Help me learn some languages!",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Maximilian Alexander",
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "classnames": "^2.2.6",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
     "gatsby-plugin-offline": "^3.0.27",
     "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.26",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-typescript": "^2.1.23",
-    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-transformer-remark": "^2.6.45",
     "gatsby-transformer-sharp": "^2.3.7",
     "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "spectre.css": "^0.5.8"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@types/classnames": "^2.2.9",
+    "@types/node": "^13.1.2",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "prettier": "^1.19.1",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.5.4"
   },
   "keywords": [
     "gatsby"
@@ -30,7 +42,7 @@
   "scripts": {
     "deploy": "gatsby build && gh-pages -d public",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
