@@ -30,10 +30,9 @@ export default class Layout extends React.Component<any, State> {
   }
 
   render() {
-    
     const wrapperClass = classNames({
       "d-flex": true,
-      "toggled": this.state.toggled
+      toggled: this.state.toggled,
     })
 
     return (
@@ -66,47 +65,24 @@ export default class Layout extends React.Component<any, State> {
             >
               <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/">
                     Home <span className="sr-only">(current)</span>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Link
+                  <a className="nav-link" href="https://www.maxmin.io/">
+                    maxmin.io
                   </a>
                 </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Dropdown
+                <li className="nav-item">
+                  <a className="nav-link" href="https://www.ditto.live/">
+                    ditto.live
                   </a>
-                  <div
-                    className="dropdown-menu dropdown-menu-right"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                    <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </div>
                 </li>
               </ul>
             </div>
           </nav>
-          <div className="container-fluid">{this.props.children}</div>
+          <div className="container-fluid p-4">{this.props.children}</div>
         </div>
       </div>
     )

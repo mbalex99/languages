@@ -10,9 +10,9 @@ export default function Template({
   return (
     <Layout>
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <span>{frontmatter.date}</span>
         <div
-          className="blog-post-content"
+          className="my-2"
           dangerouslySetInnerHTML={{ __html: html }}
         />
     </Layout>
